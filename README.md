@@ -12,7 +12,7 @@ For this project, we have implemented this following star schema:
 ![image](https://drive.google.com/uc?export=view&id=1YHwDVf6w8NjPOizaoTqAJjyJK33z-HNd)
 ![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
 
-As the fact table contains a 1 to many relationship to each of the dimensions in the data, we thought that it is appropriate to use a star schema. This database will enable the Analytics team to create recommendations to the users based on query data. Especially, they can capture live playback behavior such as song plays, artist plays, time when it is played, and more and use this behavioral data to recommend personalize playlists.
+As the fact table contains a 1 to many relationship to each of the dimensions in the data, we thought that it is appropriate to use a star schema. This database will enable the Analytics team to create recommendations to the users based on query data. Especially, they can capture live playback behavior such as song plays, artist plays, time when it is played, and more. Ultimately, this would enable the analytics team to use this behavioral data to recommend personalize playlists.
 
 ## Script Usage
 For this project, the following scripts have been developed: 
