@@ -33,7 +33,7 @@ For this project, the following scripts have been developed:
 3. **etl.ipynb**: reads and processes a single file from song_data and log_data and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
 
 4. **etl.py**:   read  and process files from song_data and log_data and load them to tables. 
-    #### Functions and its importance:
+    #### Functions within the Script:
    
     **process_song_file**: read the song files and to insert song and artist records
 
@@ -45,14 +45,14 @@ For this project, the following scripts have been developed:
 
 5. **test.py**: displays the first few rows of each table to let you check your database.
 
-## Sample Queries 
+## Sample Query:
 
-SELECT songplays.location, songplays.level, songs.title,songs.duration, time.year, time.week, artists.name as Artist_Name, users.gender as User_Gender \
-From songplays Left join songs on songplays.song_id = songs.song_id \
-Left join time on songplays.start_time = time.start_time \
-Left join artists on songplays.artist_id = artists.artist_id \
-Left join users on songplays.user_id = users.user_id \
-where songplays.song_id = 'SOZCTXZ12AB0182364' ;
+		SELECT songplays.location, songplays.level, songs.title,songs.duration, time.year, time.week, artists.name as Artist_Name, users.gender as User_Gender \
+		From songplays Left join songs on songplays.song_id = songs.song_id \
+		Left join time on songplays.start_time = time.start_time \
+		Left join artists on songplays.artist_id = artists.artist_id \
+		Left join users on songplays.user_id = users.user_id \
+		where songplays.song_id = 'SOZCTXZ12AB0182364' ;
 
 ![image](https://drive.google.com/uc?export=view&id=1y2Yba-hy8UkyDWRmIS1baQxX_4dHW-lT)
 
