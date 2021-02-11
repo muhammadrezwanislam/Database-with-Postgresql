@@ -2,10 +2,10 @@
 
 Sparkify, a music streaming app startup, wants to leverage songs and user data that they have been collecting from the app by analyzing and finding relevant patterns. In particular, the analytics team wants to know what are the songs that the users are listening to. However, within the current setup, it is difficult for them to make sense of the data as it resides in directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app, which is not suitable for quering at all. The objective of this project is to create a Postgres database along with a database schema and ELT pipeline for optimized queries and subsequent analysis. Here is the outline of the project:
 
-a) define fact and dimension tables for a star schema with a particular analytic focus
-b) create database and tables. 
-c) write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.
-d) Test to to confirm the creation of your tables with the correct columns and  to confirm records were successfully inserted into each table. 
+* define fact and dimension tables for a star schema with a particular analytic focus
+* create database and tables. 
+* write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres using Python and SQL.
+* test to to confirm the creation of tables with the correct columns and  to confirm records were successfully inserted into each table. 
 
 # Schema Design
 For this project, we have implemented this following star schema: 
