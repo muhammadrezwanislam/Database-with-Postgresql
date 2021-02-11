@@ -9,7 +9,8 @@ d) Test to to confirm the creation of your tables with the correct columns and  
 
 # Schema Design
 For this project, we have implemented this following star schema: 
-![image](https://drive.google.com/uc?export=view&id=1YHwDVf6w8NjPOizaoTqAJjyJK33z-HNd
+![image](https://drive.google.com/uc?export=view&id=1YHwDVf6w8NjPOizaoTqAJjyJK33z-HNd)
+![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
 
 As the fact table contains a 1 to many relationship to each of the dimensions in the data, we thought that it is appropriate to use a star schema. This database will enable the Analytics team to create recommendations to the users based on query data. Especially, they can capture live playback behavior such as song plays, artist plays, time when it is played, and more and use this behavioral data to recommend personalize playlists.
 
@@ -54,7 +55,7 @@ Left join artists on songplays.artist_id = artists.artist_id \
 Left join users on songplays.user_id = users.user_id \
 where songplays.song_id = 'SOZCTXZ12AB0182364' ;
 
-![image](https://drive.google.com/uc?export=view&id=1y2Yba-hy8UkyDWRmIS1baQxX_4dHW-lT
+![image](https://drive.google.com/uc?export=view&id=1y2Yba-hy8UkyDWRmIS1baQxX_4dHW-lT)
 
 
 
