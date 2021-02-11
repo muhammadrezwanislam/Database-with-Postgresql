@@ -23,7 +23,7 @@ songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays(songplay_id SER
 
 # CREATE DIMENION TABLES
 user_table_create = ("""CREATE TABLE IF NOT EXISTS users(
-                        user_id int NOT NULL PRIMARY KEY,
+                        user_id int PRIMARY KEY,
                         first_name varchar NOT NULL,
                         last_name varchar NOT NULL,
                         gender char,
@@ -31,7 +31,7 @@ user_table_create = ("""CREATE TABLE IF NOT EXISTS users(
                         """)
 
 song_table_create = ("""CREATE TABLE IF NOT EXISTS songs(
-                        song_id varchar NOT NULL PRIMARY KEY,
+                        song_id varchar PRIMARY KEY,
                         title varchar,
                         artist_id varchar,
                         year int,
@@ -39,7 +39,7 @@ song_table_create = ("""CREATE TABLE IF NOT EXISTS songs(
                         """)
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists(
-                        artist_id varchar NOT NULL PRIMARY KEY,
+                        artist_id varchar PRIMARY KEY,
                         name varchar,
                         location varchar,
                         lattitude numeric,
@@ -47,7 +47,7 @@ artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists(
                         """)
 
 time_table_create = ("""CREATE TABLE IF NOT EXISTS time(
-                        start_time timestamp NOT NULL PRIMARY KEY,
+                        start_time timestamp PRIMARY KEY,
                         hour int,
                         day int,
                         week int,
